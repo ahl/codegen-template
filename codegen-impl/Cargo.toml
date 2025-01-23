@@ -2,11 +2,16 @@
 name = "codegen-impl"
 version = "0.0.1"
 authors = ["Adam H. Leventhal <ahl@oxidecomputer.com"]
-edition = "2018"
+edition = "2021"
 license = "Apache-2.0"
 description = "Main implementation crate for the code generation"
 repository = "https://github.com/ahl/codegen-template.git"
 
 [dependencies]
-quote = "1"
-proc-macro2 = "1"
+quote = { workspace = true }
+proc-macro2 = { workspace = true }
+
+[dev-dependencies]
+expectorate = { workspace = true }
+prettyplease = { workspace = true }
+syn = { workspace = true }

@@ -2,12 +2,13 @@
 name = "codegen"
 version = "0.0.1"
 authors = ["Adam H. Leventhal <ahl@oxidecomputer.com"]
-edition = "2018"
+edition = "2021"
 license = "Apache-2.0"
 description = "Front-end crate for inclusion by consumers"
 repository = "https://github.com/ahl/codegen-template.git"
 
 [dependencies]
-codegen-macro = { path = "../codegen-macro" }
-codegen-impl = { path = "../codegen-impl" }
-rustfmt-wrapper = "0.1.0"
+codegen-macro = { workspace = true }
+codegen-impl = { workspace = true }
+prettyplease = { workspace = true }
+syn = { workspace = true }

@@ -12,3 +12,16 @@ default-members = [
 	"codegen-impl",
 	"codegen-macro",
 ]
+
+resolver = "2"
+
+[workspace.dependencies]
+codegen = { path = "codegen" }
+codegen-macro = { path = "codegen-macro" }
+codegen-impl = { path = "codegen-impl" }
+
+expectorate = "1"
+prettyplease = "0.2"
+proc-macro2 = "1"
+syn = { version = "2", features = ["parsing"] }
+quote = "1"
